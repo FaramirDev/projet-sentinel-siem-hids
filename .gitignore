@@ -13,7 +13,10 @@ data/logs_system/*
 
 # === ARCHIVES ET VERSIONS OBSOLÈTES ===
 old_version/
-test/
+
+test/*
+!test/.gitkeep
+
 dashboard/pages/backup_avant_clean/
 dashboard/pages/old_pages/
 
