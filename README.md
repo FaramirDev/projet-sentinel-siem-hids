@@ -189,6 +189,8 @@ Projet-Sentinel-Dashboard/
 └── images/                # Captures d'écran et médias du projet
 ```
 
+---
+
 ## 5. Flux de Traitement des Données
 - **Collecte (Démon HIDS)** : Le script `daemon_sentinel_hids.py` s'exécute en continu comme un service système (systemd). Il écoute les logs comme /var/log/auth.log.
 
@@ -200,6 +202,8 @@ Projet-Sentinel-Dashboard/
 
 - **Collectre du Scan réseau** est centralisé sur le meme principe de l'audit systeme, le script effectue ses différentes fonctions puis stocke l'ensemble de ses données a travers un fichier .json qui est ensuite traité par l'interface web.
 
+---
+---
 ## 6. Guide d'Installation et Déploiement
 
 Cette section détaille les étapes nécessaires pour déployer l'architecture de Sentinel SIEM sur un hôte Linux.
@@ -304,6 +308,8 @@ streamlit run dashboard/sentinel_app.py
 ```
 Par défaut, l'interface va s'ouvrir automatique en local sur le port associés : http://127.0.0.1:5000 
 
+---
+---
 ## 7. Conclusion et Perspectives
 Le projet **Sentinel SIEM** démontre la faisabilité d'une solution de **sécurité centralisée**, **légère** et **efficace** pour les environnements **Linux**. En unifiant des scripts d'audit système, un scanner réseau et un HIDS dynamique au sein d'une interface web unique, ce projet répond à une problématique concrète : simplifier la visibilité et la remédiation face aux incidents de sécurité.
 
