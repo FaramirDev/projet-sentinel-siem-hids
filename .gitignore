@@ -1,0 +1,38 @@
+# === DONNÉES DE PRODUCTION & LOGS (SIEM / HIDS) ===
+data/logs_hids/logs_event/*
+!data/logs_hids/logs_event/.gitkeep
+
+data/logs_hids/data_hids/*
+!data/logs_hids/data_hids/.gitkeep
+
+data/logs_scans/*
+!data/logs_scans/.gitkeep
+
+data/logs_system/*
+!data/logs_system/.gitkeep
+
+# === ARCHIVES ET VERSIONS OBSOLÈTES ===
+old_version/
+test/
+dashboard/pages/backup_avant_clean/
+dashboard/pages/old_pages/
+
+# === CONFIGURATION & SECRETS (CRITIQUE) ===
+.env
+*.env
+auth_secrets.*
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# === SYSTÈME ET ÉDITEURS DE CODE ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

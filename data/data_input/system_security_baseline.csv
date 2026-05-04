@@ -1,0 +1,10 @@
+path,permissions,user,group,description,usage_normale,risque_cyber
+/etc/,755,root,root,Racine des configurations système,Modification lors de l'installation de nouveaux paquets,Pivot central pour compromettre l'ensemble du système
+/etc/pam.d/,755,root,root,Modules d'authentification dynamique,Ajustement des politiques de sécurité des mots de passe,Désactivation de l'authentification ou création de backdoors
+/etc/ssh/,755,root,root,Configuration du démon SSH,Durcissement de l'accès distant ou changement de port,Accès root non autorisé ou interception de sessions
+/etc/cron.d/,755,root,root,Planificateur de tâches système,Automatisation de scripts de maintenance nocturne,Exécution de scripts malveillants avec persistance root
+/bin/,755,root,root,Commandes essentielles du système,Mise à jour des utilitaires via le gestionnaire de paquets,Remplacement par des binaires piégés de type Rootkit
+/sbin/,755,root,root,Commandes d'administration système,Opérations de maintenance sur le réseau ou les disques,Détournement des outils de filtrage réseau ou de partitionnement
+/etc/passwd,644,root,root,Base de données des utilisateurs,Création ou modification d'un compte utilisateur standard,Élévation de privilège par modification de l'UID en 0
+/etc/shadow,640,root,shadow,Fichier des mots de passe chiffrés,Mise à jour du mot de passe par un utilisateur,Extraction des hashs pour craquage de mots de passe hors-ligne
+/etc/sudoers,440,root,root,Configuration des privilèges sudo,Octroi de droits d'administration à un utilisateur précis,Élévation de privilèges totale pour un utilisateur non-privilégié
